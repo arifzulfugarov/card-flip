@@ -1,0 +1,61 @@
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background: #0f172a;
+  color: #f1f5f9;
+  text-align: center;
+  padding: 2rem;
+}
+.title {
+  font-size: 2.5rem;
+  margin-bottom: 2rem;
+}
+.card-container {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  flex-wrap: wrap;
+}
+.card {
+  width: 220px;
+  height: 300px;
+  perspective: 1000px;
+  cursor: pointer;
+  position: relative;
+}
+.card .card__face {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  backface-visibility: hidden;
+  border-radius: 15px;
+  overflow: hidden;
+  transition: transform 0.8s ease-in-out;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: #1e293b;
+  padding: 1rem;
+  box-shadow: 0 10px 20px rgba(0, 230, 230, 0.3);
+}
+.card .card__face img {
+  max-width: 100px;
+  margin-bottom: 1rem;
+}
+.card .card__face h2,
+.card .card__face h3 {
+  margin: 0.5rem 0;
+  color: #00e6e6;
+}
+.card .card__face p {
+  font-size: 0.9rem;
+}
+.card .card__face--back {
+  transform: rotateY(180deg);
+}
+.card:hover .card__face--front {
+  transform: rotateY(180deg);
+}
+.card:hover .card__face--back {
+  transform: rotateY(0);
+}
