@@ -12,8 +12,6 @@ A simple 3D flip card UI built using HTML and SCSS to showcase the main features
 2. If using SCSS, compile `style.scss` into `style.css` (already included)
 3. Or paste `style.scss` into [CodePen](https://codepen.io) and set the CSS preprocessor to SCSS
 4. You can deploy via GitHub Pages or any static hosting
+5. I also included css as I rewrited scss into css. (so you can see in my work)
 
-## Notes
-- This project uses SCSS for styling.
-- The `style.css` file is compiled and ready for GitHub Pages.
-- You can customize SCSS by editing `style.scss`, then recompile.
+## 👤 Created for the Lime-Light Internship
